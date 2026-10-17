@@ -28,4 +28,50 @@ make
 
 ## Project Purpose
 To demonstrate process synchronization concepts, concurrent access, mutual exclusion, and safe database updates.
+## Project Structure
+
+```text
+hackathon-readers-writers/
+├── src/
+│   └── main.c
+├── tests/
+│   └── test_cases.md
+├── reports/
+│   └── project_report.md
+├── Makefile
+└── README.md
+```
+
+## Build and Run
+
+Requirements: GCC, Make, and POSIX Threads on Linux or Ubuntu/WSL.
+
+Compile the program:
+
+```bash
+make
+```
+
+Run the simulator:
+
+```bash
+./build/readers_writers
+```
+
+Clean the compiled executable:
+
+```bash
+make clean
+```
+
+## Validation
+
+The observed successful run produced:
+- Final database value: 140
+- Synchronization violations: 0
+- Status: PASSED
+
+## Team Contribution
+
+This project was developed for an operating systems hackathon to demonstrate concurrency and synchronization using C and POSIX threads.
 
